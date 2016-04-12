@@ -1,0 +1,265 @@
+/**
+ * admin.css
+ */
+
+ul {
+  margin-top: 0;
+}
+
+.admin-icon-yellow {
+  color: #ffbe40;
+}
+
+.admin-header {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.admin-header-list a:hover :after {
+  content: none;
+}
+
+.admin-main {
+  background: #f3f3f3;
+  min-height:700px;
+}
+
+.admin-sidebar {
+  width: 240px;
+  min-height: 100%;
+  float: left;
+  border-right: 1px solid #cecece;
+}
+
+.admin-sidebar-list {
+  margin-bottom: 0;
+}
+
+.admin-sidebar-list li a {
+  color: #5c5c5c;
+  padding-left: 24px;
+}
+
+.admin-sidebar-list li:first-child {
+  border-top: none;
+}
+
+.admin-sidebar-sub {
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 0 16px 8px -15px #e2e2e2 inset;
+  background: #ececec;
+  padding-left: 24px;
+}
+
+.admin-sidebar-sub li:first-child {
+  border-top: 1px solid #dedede;
+}
+
+.admin-sidebar-panel {
+  margin: 10px;
+}
+
+.admin-content {
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+}
+
+.admin-content-list {
+  border: 1px solid #e9ecf1;
+  margin-top: 0;
+}
+
+.admin-content-list li {
+//  border: 1px solid #e9ecf1;
+//  padding-top:10px;
+  padding-bottom:10px;
+  border-width: 0 1px;
+  margin-left: -1px;
+}
+
+.admin-content-list li:first-child {
+  border-left: none;
+}
+
+.admin-content-list li:last-child {
+  border-right: none;
+}
+
+.admin-content-table a {
+  color: #535353;
+}
+.admin-content-file {
+  margin-bottom: 0;
+  color: #666;
+}
+
+.admin-content-file p {
+  margin: 0 0 5px 0;
+  font-size: 1.4rem;
+}
+
+.admin-content-file li {
+  padding: 10px 0;
+}
+
+.admin-content-file li:first-child {
+  border-top: none;
+}
+
+.admin-content-file li:last-child {
+  border-bottom: none;
+}
+
+.admin-content-file li .am-progress {
+  margin-bottom: 4px;
+}
+
+.admin-content-file li .am-progress-bar {
+  line-height: 14px;
+}
+
+.admin-content-task {
+  margin-bottom: 0;
+}
+
+.admin-content-task li {
+  padding: 5px 0;
+  border-color: #eee;
+}
+
+.admin-content-task li:first-child {
+  border-top: none;
+}
+
+.admin-content-task li:last-child {
+  border-bottom: none;
+}
+
+.admin-task-meta {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.admin-task-bd {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.admin-content-comment {
+  margin-bottom: 0;
+}
+
+.admin-content-comment .am-comment-bd {
+  font-size: 1.4rem;
+}
+
+.admin-content-pagination {
+  margin-bottom: 0;
+}
+.admin-content-pagination li a {
+  padding: 4px 8px;
+}
+
+/*
+* user.html css
+*/
+.user-info {
+  margin-bottom: 15px;
+}
+
+.user-info .am-progress {
+  margin-bottom: 4px;
+}
+
+.user-info p {
+  margin: 5px;
+}
+
+.user-info-order {
+  font-size: 1.4rem;
+}
+
+/*
+* errorLog.html css
+*/
+
+.error-log .am-pre-scrollable {
+  max-height: 40rem;
+}
+
+/*
+* table.html css
+*/
+
+.table-main {
+  font-size: 1.4rem;
+  padding: .5rem;
+}
+
+.table-main button {
+  background: #fff;
+}
+
+.table-check {
+  width: 30px;
+}
+.table-question {
+  width: 100px;
+}
+.table-answer {
+  width: 100px;
+}
+.table-id {
+  width: 50px;
+}
+.table-number {
+  width: 100px;
+}
+/*
+gallery.html css
+*/
+
+.gallery-list li {
+  padding: 10px;
+}
+
+.gallery-list a {
+  color: #666;
+}
+
+.gallery-list a:hover {
+  color: #3bb4f2;
+}
+
+.gallery-title {
+  margin-top: 6px;
+  font-size: 1.4rem;
+}
+
+.gallery-desc {
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+/*
+ 404.html css
+*/
+
+.page-404 {
+  background: #fff;
+  border: none;
+  width: 200px;
+  margin: 0 auto;
+}
+.hd_del_ta{background: #6b4a1e; font-size:14px;}
+.hd_del_ta td{background:#ffffff; padding:5px; text-align:left;line-height:35px;}
+.hd_del_ta td.hd_ta_t{background:#7cb5ec; text-align:center;color:#fff;}
+.hd_del_ta td.hd_ta_t a.left{float:left;color:#fff;margin-left:5px;}
+.hd_del_ta td.hd_ta_t a.right{float:right;color:#fff;margin-right:10px;}
+.hd_del_ta td input,.hd_del_ta td select{padding:3px 10px 3px 10px; font-size: 15px;}
+.hd_del_ta td table.optionTab{margin:0 auto;background-color: #ccc;}
+.hd_del_ta td table.optionTab td{line-height:18px;padding:5px;}
+.hd_del_ta td input.mvDown,.hd_del_ta td input.mvUp{font-size:12px;}
