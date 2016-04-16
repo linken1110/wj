@@ -83,6 +83,7 @@
                     <button type="button" class="am-btn am-btn-default" onclick="window.location.href='/statics/download_data?survey_id=<?php echo $item['id']?>'"> 数据导出</button>
                         <button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" onclick="window.location.href='/statics/question_result?survey_id=<?php echo $item['id']?>'">数据统计</button>
 		 <button type="button" class="am-btn am-btn-default " onclick="window.location.href='/survey_result/home_list?survey_id=<?php echo $item['id']?>'">查看结果</button>
+		<button type="button" class="am-btn am-btn-default " onclick="copy_survey(<?php echo $item['id']?>)">复制问卷</button>
 </div></div>
 </div> <div class="recycle"><?php echo $item['all']?></div>   <div class="create_time"><?php echo $item['create_date']?></div></span>
 		<?php endforeach;?>

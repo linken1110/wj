@@ -60,6 +60,20 @@ function add_result(survey_id){
 	}
 	
 }
+function copy_survey(id){
+	if(confirm("确定要复制该问卷吗？")){
+		$.ajax({
+                        type: 'POST',
+                        url: "/main/copy_survey",
+                        data: {survey_id:id},
+                        dataType: 'json',
+                        success: function(result){
+				alert('复制成功');
+                        }
+                });
+	
+	}
+}
 function save_survey_result(home_id){
 	question_and_answer = "";
 	 $(".question").each(function(){

@@ -99,7 +99,32 @@ class Main extends MY_Controller {
                         }
                         return $result;
         }
-
+	public function copy_survey(){
+		$survey_id = $this->input->get_post('survey_id');
+		$survey = $this->survey_model->get_by_id($survey_id);
+		unset($survey['id']); 
+		unset($survey['create_date']);
+		$user = $this->user_info;
+		$survey['uid'] = $user['uid'];
+		$new_id = $this->survey_model->insert($survey);
+		$questions= $this->get_list($survey_id);
+		if(!empty($questions)){
+			foreach($questions as $question){
+				unset($question['id']);
+				$new_question = $question;
+				unset($question['option_list']);
+				$question['survey_id'] = $new_id;
+				$question_id = $this->question_model->insert($question);
+				if(!empty($new_question['option_list'])){
+					foreach($new_question['option_list'] as $option){
+						unset($option['id']);
+						$option['question_id'] = $question_id;
+						$this->question_option_model->insert($option);
+					}
+				}
+			}
+		}
+	}
 	public function get_new_list(){
 		$id = $this->input->get_post('id');
 		$survey['list'] =  $this->get_list($id);
